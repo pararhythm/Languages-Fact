@@ -19,6 +19,54 @@
         "var trong C# không phải kiểu động: compiler vẫn suy luận kiểu tĩnh tại compile time",
         "C# dùng ký hiệu # trong tên, nhưng ký hiệu này không có nghĩa là “C cộng bốn lần”; nó là một phần tên thương hiệu/ngôn ngữ",
         "C# sinh ra trong hệ sinh thái .NET, vì vậy các tính năng runtime như reflection, metadata và attribute là thành phần rất “bản địa”, không phải thư viện phụ thêm"
+    ],
+    "Java": [
+        "Java ban đầu có tên là Oak, lấy từ một cây sồi gần văn phòng của James Gosling; tên này phải đổi vì đã có thương hiệu khác dùng",
+        "Java được thiết kế cho thiết bị điện tử tiêu dùng trước khi bùng nổ nhờ web và server-side",
+        "Từ khóa strictfp tồn tại để ép phép toán dấu phẩy động có tính nhất quán giữa các nền tảng—một dấu vết của triết lý “write once, run anywhere”",
+        "Java có các class file bytecode; JVM không bắt buộc chỉ chạy code được viết bằng Java—Kotlin, Scala, Groovy và nhiều ngôn ngữ khác cũng biên dịch xuống JVM",
+        "boolean trong Java không có quy định cố định rằng phải chiếm đúng một byte trong bộ nhớ; đó là chi tiết triển khai của JVM"
+    ],
+    "JavaScript": [
+        "JavaScript được tạo ra trong thời gian cực ngắn—khoảng 10 ngày—và ban đầu mang tên Mocha, rồi LiveScript trước khi thành JavaScript",
+        "Tên JavaScript chủ yếu là quyết định tiếp thị; ngôn ngữ này không phải “Java phiên bản script” và hai ngôn ngữ có thiết kế rất khác nhau",
+        "NaN có một đặc tính lạ: NaN !== NaN; vì vậy cần Number.isNaN() để kiểm tra đáng tin cậy",
+        "JavaScript có typeof null === \"object\"—một lỗi lịch sử được giữ lại để tránh phá vỡ tương thích web",
+        "Hàm trong JavaScript vừa là code có thể gọi, vừa là object có properties; đó là một lý do callbacks, closures và functional style phát triển tự nhiên trong hệ sinh thái này"
+    ],
+    "TypeScript": [
+        "TypeScript không thay thế JavaScript ở runtime: mã TypeScript được xóa kiểu khi biên dịch, kết quả là JavaScript chạy trên engine bình thường",
+        "TypeScript áp dụng structural typing: hai object có thể tương thích chỉ vì có cùng “hình dạng”, không cần khai báo cùng một interface/class",
+        "Kiểu any là cửa thoát cố ý khỏi static type checking, còn unknown an toàn hơn vì buộc kiểm tra trước khi dùng",
+        "TypeScript có type system rất mạnh nhưng không có reflection type đầy đủ ở runtime, vì phần lớn type không còn tồn tại sau khi emit JavaScript",
+        "File .d.ts chỉ chứa khai báo kiểu, thường mô tả thư viện JavaScript có sẵn mà không hề chứa implementation"
+    ],
+    "Python": [
+        "Python không được đặt tên theo loài trăn mà theo chương trình hài Anh Monty Python’s Flying Circus",
+        "Python được bắt đầu như một dự án nghỉ lễ cuối năm 1989, với mục tiêu kế thừa vài ý tưởng từ ngôn ngữ ABC nhưng hấp dẫn lập trình viên Unix/C hơn",
+        "Gõ import antigravity trong CPython có thể mở một comic XKCD—một Easter egg chính thức",
+        "Trong REPL Python, biến _ thường giữ kết quả của biểu thức gần nhất, rất tiện cho thử nghiệm nhanh",
+        "CPython thường cache sẵn các integer từ -5 đến 256, nên đôi lúc hai biến số nhỏ có thể trỏ đến cùng object—đừng dùng is để so sánh giá trị số"
+    ],
+    "Go": [
+        "Go được khởi tạo tại Google vào tháng 9/2007 bởi Robert Griesemer, Rob Pike và Ken Thompson; bản công khai đầu tiên ra năm 2009",
+        "“Golang” không phải tên chính thức của ngôn ngữ; tên chính thức là Go, còn “Golang” phổ biến vì thuận tiện cho tìm kiếm và domain",
+        "Go không có while; mọi vòng lặp đều dùng for, kể cả dạng giống while",
+        "Chuỗi nguồn Go được mã hóa UTF-8 và ngôn ngữ có hỗ trợ mạnh cho text UTF-8 ngay từ nền tảng",
+        "Go cố ý không có generics trong nhiều năm đầu; tính năng type parameters chỉ được đưa vào Go 1.18, phản ánh triết lý tối giản của ngôn ngữ"
+    ],
+    "Rust": [
+        "Rust khởi đầu như dự án cá nhân của Graydon Hoare trước khi Mozilla đầu tư và phát triển nó",
+        "Tên Rust được lấy cảm hứng từ nhóm nấm “rust fungi”, không phải quá trình gỉ sét của kim loại",
+        "Rust không có garbage collector, nhưng ownership và borrow checker giúp đảm bảo memory safety ở compile time trong rất nhiều trường hợp",
+        "Macro println! có dấu ! vì đây là macro, không phải hàm; distinction này xuất hiện ngay trong cú pháp",
+        "unsafe trong Rust không có nghĩa là toàn bộ code trở nên nguy hiểm: nó khoanh vùng những thao tác compiler không thể tự chứng minh an toàn, để phần còn lại vẫn được kiểm tra nghiêm ngặt"
+    ],
+    "Kotlin": [
+        "Kotlin được đặt tên theo đảo Kotlin gần St. Petersburg, nơi JetBrains có văn phòng",
+        "Kotlin không chỉ dành cho Android: nó có thể nhắm JVM, JavaScript, native binary và WebAssembly trong mô hình đa nền tảng",
+        "null là một phần của type system: String và String? là hai kiểu khác nhau, nhờ đó nhiều lỗi null được chặn lúc compile",
+        "Extension function trông như thêm phương thức vào class có sẵn, nhưng thực chất không sửa class gốc; compiler dịch nó thành hàm với receiver làm tham số",
+        "Kotlin có Nothing, một kiểu không có giá trị nào, hữu ích để mô hình hóa hàm không bao giờ trả về bình thường—ví dụ hàm luôn throw"
     ]
-
 }
