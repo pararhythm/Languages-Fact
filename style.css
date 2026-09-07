@@ -21,6 +21,10 @@ h1 {
 }
 
 #languages {
-    width: 40%;
+    width: 30%;
     min-height: 40px;
+}
+
+p {
+    font-size: 1rem;
 }

@@ -1,5 +1,3 @@
-
-const FACTS_NUMBER = 5
 async function main() {
     const file = "./facts.json"
     try {
@@ -19,7 +17,11 @@ async function main() {
         })
 
         select.addEventListener('change', (e) => {
-            let selectedLanguage = e.target.value;
+            const selected = e.target.value;
+            const chosenLanguage = data[selected];
+            const index = Math.floor(Math.random() * chosenLanguage.length);
+            const renderedFact = document.querySelector('#fact');
+            renderedFact.textContent = chosenLanguage[index]; 
         });
 
     } catch (error) {
