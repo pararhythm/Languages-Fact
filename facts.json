@@ -1,0 +1,24 @@
+{
+    "C": [
+        "a[i] thực chất là *(a + i), nên i[a] cũng hợp lệ và cho cùng kết quả—dù gần như không ai nên viết như vậy",
+        "C có các digraph như <: thay cho [ và :> thay cho ], sinh ra để hỗ trợ những bàn phím thiếu ký tự cần thiết",
+        "Trong scanf, dấu * trong format như %*d có nghĩa là đọc nhưng bỏ qua, không gán giá trị vào biến nào",
+        "sizeof vừa là toán tử vừa là keyword; với đa số biểu thức, nó được tính ở compile time",
+        "Tên ban đầu của C là New B, vì nó là bản phát triển từ ngôn ngữ B; sau đó được rút thành C"
+    ],
+    "C++": [
+        "C++ từng mang tên “C with Classes” trước khi tên C++ được dùng rộng rãi",
+        "Ký hiệu ++ trong tên không chỉ để “trông ngầu”: đó là toán tử tăng trong C, ngụ ý C++ là một bước tiến từ C",
+        "C++ lấy nhiều ý tưởng hướng đối tượng từ Simula 67, không phải từ Java",
+        "C++ có destructor xác định thời điểm chạy theo lifetime của object—nền tảng của idiom RAII, giúp quản lý file, mutex và bộ nhớ mà không cần garbage collector",
+        "C++ hiện có các khái niệm lifetime cho object ở static, thread, automatic và dynamic storage duration; “biến nằm ở đâu” trong C++ tinh vi hơn nhiều so với chỉ stack và heap"
+    ],
+    "C#": [
+        "C# được thiết kế để chạy qua .NET runtime, nên về nguyên tắc có thể chạy trên mọi hệ điều hành hỗ trợ runtime này, không bị giới hạn ở Windows",
+        "C# có keyword default, có thể biểu diễn giá trị mặc định của một kiểu mà không cần tự viết 0, false hay null",
+        "var trong C# không phải kiểu động: compiler vẫn suy luận kiểu tĩnh tại compile time",
+        "C# dùng ký hiệu # trong tên, nhưng ký hiệu này không có nghĩa là “C cộng bốn lần”; nó là một phần tên thương hiệu/ngôn ngữ",
+        "C# sinh ra trong hệ sinh thái .NET, vì vậy các tính năng runtime như reflection, metadata và attribute là thành phần rất “bản địa”, không phải thư viện phụ thêm"
+    ]
+
+}
