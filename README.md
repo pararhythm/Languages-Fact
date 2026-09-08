@@ -3,7 +3,7 @@
 Languages-Fact là một web chỉ có 1 trang duy nhất: Người dùng chọn 1 trong 10 ngôn ngữ có sẵn, hệ thống sẽ đưa ra 1 trong 5 sự thật ngẫu nhiên về ngôn ngữ đó
 
 ## Video demo
-[![Bấm vào đây để xem video](./assets/picture-1.png)](/assets/languages-fact.mp4)
+![Demo](/assets/languages-fact.gif)
 
 ## Ảnh chụp giao diện
 <figure>
